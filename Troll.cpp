@@ -23,16 +23,18 @@ case 1:
     cin >> fool;
     break;
 case 2:
+    system("clear");
     cout << "Doceniam, ze wierzysz w moje mozliwosci, ale tu tez nie znajdziesz nic" << endl;
     cout << "Jak wczesniej: dowolny klawisz, Enter i odpusc sobie, na prawde" << endl;
     cin >> fool;
     break;
 case 3:
+    system("clear");
     cout << "Zaczynasz mnie powoli denerwowac. Myslisz ze ta opcja dziala jak tamte nie dzialaly?" << endl;
     cin >> fool;
     break;
-counter++;
 }
+counter++;
 }
 
 Troll::~Troll()
