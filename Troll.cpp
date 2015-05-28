@@ -8,12 +8,15 @@
 
 Troll::Troll()
 {
-    counter = 1;
+ counter = 0;
 }
 
 void Troll::print_troll()
 {
     char fool;
+
+if(counter<6)
+{
 switch(counter)
 {
 case 1:
@@ -33,7 +36,22 @@ case 3:
     cout << "Zaczynasz mnie powoli denerwowac. Myslisz ze ta opcja dziala jak tamte nie dzialaly?" << endl;
     cin >> fool;
     break;
+case 4:
+    system("clear");
+    cout << "Mozemy sie tak wiecznie bawic, ale widze, ze Ty wolisz sluchac mnie, niz grac... Pewnie normalnie tez katujesz menu glowne w grach" << endl;
+    cout << "Jak wczesniej:  "; cin >> fool;
+    break;
+case 5:
+    system("clear");
+    cout << "Daj spokoj  "; cin >> fool;
+    break;
 }
+}
+    else
+    {
+        system("clear");
+        cout << "Koniec zartow, masz grac!   "; cin >> fool;
+    }
 counter++;
 }
 
