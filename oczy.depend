@@ -1,0 +1,103 @@
+# depslib dependency file v1.0
+1432819872 source:/home/szymon/oczy/main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<ncurses.h>
+	<stdlib.h>
+	<iomanip>
+	<stdio.h>
+	"Talia.h"
+	"Gracz.h"
+	"Stol.h"
+	"Troll.h"
+
+1432545936 /home/szymon/oczy/Karta.h
+	<vector>
+	<string>
+	<stdio.h>
+	<iostream>
+
+1432199443 source:/home/szymon/oczy/Karta.cpp
+	"Karta.h"
+	<string>
+	<vector>
+	<iostream>
+	<algorithm>
+	<iomanip>
+
+1432814534 source:/home/szymon/oczy/Gracz.cpp
+	<string>
+	<vector>
+	<iostream>
+	<algorithm>
+	<iomanip>
+	"Gracz.h"
+	"Talia.h"
+
+1432814051 /home/szymon/oczy/Gracz.h
+	<vector>
+	<string>
+	<stdio.h>
+	<iostream>
+	"Talia.h"
+
+1432812137 /home/szymon/oczy/Talia.h
+	<vector>
+	<string>
+	<stdio.h>
+	<iostream>
+	"Gracz.h"
+
+1432814435 source:/home/szymon/oczy/Talia.cpp
+	<string>
+	<cstring>
+	<vector>
+	<iostream>
+	<algorithm>
+	<iomanip>
+	<cstdio>
+	"Talia.h"
+	"Gracz.h"
+
+1432815155 source:/home/szymon/oczy/Stol.cpp
+	<string>
+	<vector>
+	<iostream>
+	<algorithm>
+	<iomanip>
+	<stdlib.h>
+	"Stol.h"
+	"Talia.h"
+	"Gracz.h"
+
+1432814773 /home/szymon/oczy/Stol.h
+	<vector>
+	<string>
+	<stdio.h>
+	<iostream>
+	"Talia.h"
+	"Gracz.h"
+
+1432736119 source:/home/szymon/oczy/Gracze.cpp
+	<string>
+	<vector>
+	<iostream>
+	<algorithm>
+	<iomanip>
+	"Gracze.h"
+	"Talia.h"
+
+1432735902 /home/szymon/oczy/Gracze.h
+	<vector>
+	<string>
+	<stdio.h>
+	<iostream>
+	"Talia.h"
+
+1432819514 /home/szymon/oczy/Troll.h
+	<vector>
+	<string>
+	<stdio.h>
+	<iostream>
+
