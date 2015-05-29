@@ -38,6 +38,8 @@
 		<Unit filename="Stol.h" />
 		<Unit filename="Talia.cpp" />
 		<Unit filename="Talia.h" />
+		<Unit filename="Troll.cpp" />
+		<Unit filename="Troll.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

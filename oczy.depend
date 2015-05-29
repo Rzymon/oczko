@@ -60,7 +60,7 @@
 	"Talia.h"
 	"Gracz.h"
 
-1432815155 source:/home/szymon/oczy/Stol.cpp
+1432936254 source:/home/szymon/oczy/Stol.cpp
 	<string>
 	<vector>
 	<iostream>
@@ -71,7 +71,7 @@
 	"Talia.h"
 	"Gracz.h"
 
-1432814773 /home/szymon/oczy/Stol.h
+1432935938 /home/szymon/oczy/Stol.h
 	<vector>
 	<string>
 	<stdio.h>
@@ -100,4 +100,12 @@
 	<string>
 	<stdio.h>
 	<iostream>
+
+1432821544 source:/home/szymon/oczy/Troll.cpp
+	<string>
+	<vector>
+	<iostream>
+	<algorithm>
+	<iomanip>
+	"Troll.h"
 

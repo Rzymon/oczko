@@ -19,7 +19,7 @@ public:
     int get_liczba_graczy();
     void ustaw_graczy(Gracz&);
     void jacy_gracze();
-    int tura(Gracz&, Talia&);
+    void tura(Gracz&, Talia&);
     ~Stol();
 };
 

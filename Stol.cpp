@@ -36,7 +36,7 @@ void Stol::jacy_gracze()
     }
 }
 
-int Stol::tura(Gracz& gracz, Talia& talia)
+void Stol::tura(Gracz& gracz, Talia& talia)
 {
     int aktywni_gracze = liczba_graczy;
     int aktywni_tura;
@@ -52,15 +52,15 @@ int Stol::tura(Gracz& gracz, Talia& talia)
                 cout << "--------------------------***RANKING***--------------------------" << endl;
                 for (int f=0; f<liczba_graczy; f++)
                 {
-                    cout << "[" << f+1 << "]" << gracze[f].get_imie() << ":  " << gracze[f].suma_pkt << endl;
+                    cout << "[" << f+1 << "]" << gracze[f].imie << ":  " << gracze[f].suma_pkt << endl;
                 }
                 cout << "--------------------------------------------" << endl;
 
 
 
-                cout << "|||||||||| GRACZ [" << i+1 << "]:  " << gracze[i].get_imie() << "  ||||||||||" << endl;
+                cout << "|||||||||| GRACZ [" << i+1 << "]:  " << gracze[i].imie << "  ||||||||||" << endl;
                 cout << "--------------------------------------------" << endl;
-                if(gracz.karty>0)
+                if(gracze[i].karty>0)
                 {
                     cout << gracze[i].reka_karty;
                 }
@@ -84,7 +84,7 @@ int Stol::tura(Gracz& gracz, Talia& talia)
                 {
                 case 1:
                     gracze[i].pobierz_karte(talia);
-                    //gracze[i].dodaj_sume(talia);
+                    gracze[i].dodaj_sume(talia);
                     system("clear");
                     break;
                 case 2:
@@ -92,7 +92,6 @@ int Stol::tura(Gracz& gracz, Talia& talia)
                     break;
                 case 3:
                     talia.tasuj_talie();
-                    wybor = 666;
                     system("clear");
                     break;
                 }
