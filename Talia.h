@@ -28,6 +28,7 @@ public:
     void print_talia(); //!FUNKCJA KONTROLNA
     void tasuj_talie();
     void usun_karte();
+    int myrandom ();
     ~Talia();
 
     friend class Gracz;

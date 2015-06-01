@@ -5,6 +5,8 @@
 #include <algorithm> //! DO MIESZANIA TALII
 #include <iomanip> //!DO SETW()
 #include <cstdio>
+#include <cstdlib>
+#include <ctime>
 
 #include "Talia.h"
 #include "Gracz.h"
@@ -77,9 +79,15 @@ void Talia::print_talia()
         if(i+1==wielkosc) cout << endl;
     }
 }
+
 void Talia::tasuj_talie()
 {
-    random_shuffle(talia.begin(),talia.end());
+    srand(time(NULL));
+    for (int k = 0; k < get_zestaw_size(); k++)
+    {
+    int r = k + rand() % (talia.size() - k);
+    swap(talia[k], talia[r]);
+    }
 }
 
 void Talia::usun_karte()

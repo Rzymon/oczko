@@ -42,7 +42,7 @@
 	<iostream>
 	"Talia.h"
 
-1432812137 /home/szymon/oczy/Talia.h
+1433179187 /home/szymon/oczy/Talia.h
 	<vector>
 	<string>
 	<stdio.h>
@@ -60,7 +60,7 @@
 	"Talia.h"
 	"Gracz.h"
 
-1433173713 source:/home/szymon/oczy/Stol.cpp
+1433178188 source:/home/szymon/oczy/Stol.cpp
 	<string>
 	<vector>
 	<iostream>
