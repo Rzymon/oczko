@@ -24,7 +24,7 @@ public:
     Gracz();
     void set_imie(string);          //!USTAWIA IMIE GRACZ(TYLKO RAZ NA POCZATKU)
     string get_imie();              //!POBIERA IMIE GRACZA
-    string pobierz_karte(Talia&);   //!DODAJE KARTE DO REKI GRACZA
+    void pobierz_karte(Talia&);   //!DODAJE KARTE DO REKI GRACZA
     void dodaj_sume(Talia&);        //!DODAJE PKT DO PULI GRACZA
     ~Gracz();
 

@@ -17,20 +17,12 @@ int Talia::wartosci[13] = {2,3,4,5,6,7,8,9,10,2,3,4,11};
 Talia::Talia()
 {
     wartosc = 0;
-
-    for(int k=0; k<4; k++)
-    {
-        for(int f=0; f<13; f++)
-        {
-            card = figura[f]+" "+kolor[k];
-            talia.push_back(card);
-        }
-    }
 }
 
 string Talia::get_karta()
 {
-    return talia[0];
+    string kasztan = talia[0];
+    return kasztan;
 }
 
 void Talia::dodaj_talie()
@@ -70,8 +62,9 @@ void Talia::ile_talii()
 
 void Talia::print_talia()
 {
+    int wielkosc = talia.size();
 
-    for(int i=0; i<talia.size(); i++)
+    for(int i=0; i<wielkosc; i++)
     {
         cout << "[" << i+1 << "]";
         cout.width(20);
@@ -79,7 +72,7 @@ void Talia::print_talia()
         if(!((i+1)%5)) cout << endl;
 
 
-        if(i+1==talia.size()) cout << endl;
+        if(i+1==wielkosc) cout << endl;
     }
 }
 void Talia::tasuj_talie()

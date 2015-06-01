@@ -23,25 +23,27 @@ string Gracz::get_imie()
     return imie;
 }
 
-string Gracz::pobierz_karte(Talia& talia)
+void Gracz::pobierz_karte(Talia& talia)
 {
     karta = talia.get_karta();
-    reka_karty = "  |  " + karta;
-    talia.usun_karte();
+    if(karty<1) {reka_karty = karta;}
+    if(karty>0) {reka_karty = reka_karty + " | " + karta;}
     karty++;
+    talia.usun_karte();
 }
 
 void Gracz::dodaj_sume(Talia& talia)
 {
-    for(int i=0; i<talia.get_zestaw_size(); i++)
+    for(int i=0; i<13; i++)
     {
-        if(karta == talia.figura[i])
+        printf("%i", i);
+        if(karta.c_str() == talia.figura[i].c_str())
         {
-            talia.wartosc = talia.wartosci[i];
-            suma_pkt += talia.wartosc;
+            printf("sprawdzam..."); system("sleep 2");
+            suma_pkt += talia.wartosci[i];
         }
-        break;
     }
+    talia.usun_karte();
 }
 
 Gracz::~Gracz()

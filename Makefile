@@ -1,4 +1,6 @@
 all:
 	clear
-	g++ *.cpp -o lab4
+	g++ -Wall *.cpp -o lab4
+
+run: all
 	./lab4

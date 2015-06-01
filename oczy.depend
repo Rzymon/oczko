@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1432819872 source:/home/szymon/oczy/main.cpp
+1432940829 source:/home/szymon/oczy/main.cpp
 	<iostream>
 	<string>
 	<vector>
@@ -26,7 +26,7 @@
 	<algorithm>
 	<iomanip>
 
-1432814534 source:/home/szymon/oczy/Gracz.cpp
+1433164389 source:/home/szymon/oczy/Gracz.cpp
 	<string>
 	<vector>
 	<iostream>
@@ -35,7 +35,7 @@
 	"Gracz.h"
 	"Talia.h"
 
-1432814051 /home/szymon/oczy/Gracz.h
+1433151951 /home/szymon/oczy/Gracz.h
 	<vector>
 	<string>
 	<stdio.h>
@@ -49,7 +49,7 @@
 	<iostream>
 	"Gracz.h"
 
-1432814435 source:/home/szymon/oczy/Talia.cpp
+1433166194 source:/home/szymon/oczy/Talia.cpp
 	<string>
 	<cstring>
 	<vector>
@@ -60,7 +60,7 @@
 	"Talia.h"
 	"Gracz.h"
 
-1432936254 source:/home/szymon/oczy/Stol.cpp
+1433166856 source:/home/szymon/oczy/Stol.cpp
 	<string>
 	<vector>
 	<iostream>

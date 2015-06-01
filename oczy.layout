@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Stol.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+	<File name="Troll.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="348" topLine="1" />
-		</Cursor>
-	</File>
-	<File name="Talia.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="773" topLine="20" />
-		</Cursor>
-	</File>
-	<File name="Stol.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2850" topLine="83" />
+			<Cursor1 position="1220" topLine="16" />
 		</Cursor>
 	</File>
 	<File name="Gracz.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="222" topLine="2" />
-		</Cursor>
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3084" topLine="61" />
-		</Cursor>
-	</File>
-	<File name="Troll.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1220" topLine="29" />
-		</Cursor>
-	</File>
-	<File name="Gracz.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="468" topLine="19" />
+			<Cursor1 position="273" topLine="7" />
 		</Cursor>
 	</File>
 	<File name="Talia.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="108" topLine="5" />
+			<Cursor1 position="108" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Troll.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="195" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Stol.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2426" topLine="69" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2561" topLine="51" />
+		</Cursor>
+	</File>
+	<File name="Stol.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="348" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Talia.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="489" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Gracz.cpp" open="1" top="1" tabpos="7" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="665" topLine="22" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

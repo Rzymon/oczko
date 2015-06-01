@@ -39,64 +39,66 @@ void Stol::jacy_gracze()
 void Stol::tura(Gracz& gracz, Talia& talia)
 {
     int aktywni_gracze = liczba_graczy;
-    int aktywni_tura;
+    int aktywni_tura = 0;
 ///!-------------------------------------------------------
     int wybor=0;
 
-    for(int t=0; t<aktywni_gracze; t++)
+    while(true)
     {
         aktywni_tura = aktywni_gracze;
-            for(int i=0; i<liczba_graczy; i++)
+        for(int i=0; i<liczba_graczy; i++)
+        {
+            system("clear");
+            cout << "--------------------------***RANKING***--------------------------" << endl;
+            for (int f=0; f<liczba_graczy; f++)
             {
-                system("clear");
-                cout << "--------------------------***RANKING***--------------------------" << endl;
-                for (int f=0; f<liczba_graczy; f++)
-                {
-                    cout << "[" << f+1 << "]" << gracze[f].imie << ":  " << gracze[f].suma_pkt << endl;
-                }
-                cout << "--------------------------------------------" << endl;
-
-
-
-                cout << "|||||||||| GRACZ [" << i+1 << "]:  " << gracze[i].imie << "  ||||||||||" << endl;
-                cout << "--------------------------------------------" << endl;
-                if(gracze[i].karty>0)
-                {
-                    cout << gracze[i].reka_karty;
-                }
-                if(gracze[i].suma_pkt>21)
-                {
-                    aktywni_tura--;
-                    wybor=2;
-                }
-                else
-                {
-                    cout << endl;
-                    cout << "--------------------------------------------" << endl;
-                    cout << "[1] - Biore karte z talii" << endl;
-                    cout << "[2] - Pasuje w tej rundzie" << endl;
-                    cout << "[3] - Tasuj talie" << endl;
-                    cout << "CO ROBISZ: ";
-                    cin >> wybor;
-                }
-
-                switch(wybor)
-                {
-                case 1:
-                    gracze[i].pobierz_karte(talia);
-                    gracze[i].dodaj_sume(talia);
-                    system("clear");
-                    break;
-                case 2:
-                    system("clear");
-                    break;
-                case 3:
-                    talia.tasuj_talie();
-                    system("clear");
-                    break;
-                }
+                cout << "[" << f+1 << "]" << gracze[f].imie << ":  " << gracze[f].suma_pkt << endl;
             }
-        if(aktywni_tura=0) break;
+            cout << "--------------------------------------------" << endl;
+
+
+
+            cout << "|||||||||| GRACZ [" << i+1 << "]:  " << gracze[i].imie << "  ||||||||||" << endl;
+            cout << "--------------------------------------------" << endl;
+            if(gracze[i].karty>0)
+            {
+                cout << gracze[i].reka_karty;
+            }
+            if(gracze[i].suma_pkt>21)
+            {
+                aktywni_tura--;
+                wybor=2;
+            }
+            else
+            {
+                cout << endl;
+                cout << "--------------------------------------------" << endl;
+                cout << "[1] - Biore karte z talii" << endl;
+                cout << "[2] - Pasuje w tej rundzie" << endl;
+                cout << "[3] - Tasuj talie" << endl;
+                cout << "CO ROBISZ: ";
+                cin >> wybor;
+            }
+
+            switch(wybor)
+            {
+            case 1:
+                gracze[i].pobierz_karte(talia);
+                gracze[i].dodaj_sume(talia);
+                system("sleep 3");
+                system("clear");
+                break;
+            case 2:
+                system("clear");
+                aktywni_tura--;
+                break;
+            case 3:
+                talia.tasuj_talie();
+                system("clear");
+                break;
+            }
+        }
+        if(aktywni_tura<1){break;}
     }
 }
 
