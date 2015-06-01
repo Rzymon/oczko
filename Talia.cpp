@@ -27,11 +27,12 @@ string Talia::get_karta()
 
 void Talia::dodaj_talie()
 {
-    for(int k=0; k<4; k++)
+    for(int f=0; f<13; f++)
     {
-        for(int f=0; f<13; f++)
+        for(int k=0; k<4; k++)
         {
-            card = kolor[k]+" "+figura[f];
+
+            card = figura[f]+" || "+kolor[k];
             talia.push_back(card);
         }
     }
@@ -49,11 +50,12 @@ void Talia::ile_talii()
 
     for(int i=0; i<ilosc; i++)
     {
-        for(int k=0; k<4; k++)
+        for(int f=0; f<13; f++)
         {
-            for(int f=0; f<13; f++)
+            for(int k=0; k<4; k++)
             {
-                card = kolor[k]+" "+figura[f];
+
+                card = figura[f]+" "+kolor[k];
                 talia.push_back(card);
             }
         }

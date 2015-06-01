@@ -29,7 +29,6 @@ int main()
     do
     {
         system("clear");
-        t1.print_talia();
         cout << "\n                 __";
         cout << "\n                /  >";
         cout << "\n  *            /  /________________________________________________";
@@ -57,19 +56,22 @@ int main()
             cout << "----------------------------------------" << endl;
             cout << "Najpierw podaj ile talii ma zawierac zestaw kart w tej grze:  ";
             t1.ile_talii();
+            t1.tasuj_talie();
             cout << endl;
-            cout << "Zestaw talii zostal utworzony! Bedziesz mogl go tasowac, dodawac nowa talie i przegladac go w trakcie rogrywki" << endl;
+            cout << "Zestaw talii zostal utworzony i przestasowany!" << endl;
+            cout << "Bedziesz go mogl tasowac i przegladac w trakcie gry" << endl;
             cout << "----------------------------------------" << endl;
             cout << "Podaj teraz liczbe graczy w tej grze oraz nazwe kazdego z nich: " << endl;
             s1.ustaw_graczy(g1);
             cout << endl;
-            cout << "Wszyscy Gracz zostali dodani! Zapamietaj swoja nazwe i numer gracza." << endl;
+            cout << "Wszyscy Gracze zostali dodani! Zapamietaj swoja nazwe i numer gracza." << endl;
             cout << "Bedzie on wyswietlany na stole podczas gry" << endl;
             cout << "----------------------------------------" << endl;
             system("clear");
             cout << "[Dowolny klawisz] - Aby rozpoczac gre z tymi ustawieniami" << endl;
             cin >> fool;
             s1.tura(g1,t1);
+            s1.ranking(g1);
             break;
         }
         case 2:

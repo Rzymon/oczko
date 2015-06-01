@@ -20,6 +20,7 @@ public:
     void ustaw_graczy(Gracz&);
     void jacy_gracze();
     void tura(Gracz&, Talia&);
+    void ranking(Gracz&);
     ~Stol();
 };
 

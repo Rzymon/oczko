@@ -36,11 +36,10 @@ void Gracz::dodaj_sume(Talia& talia)
 {
     for(int i=0; i<13; i++)
     {
-        printf("%i", i);
-        if(karta.c_str() == talia.figura[i].c_str())
+        if(karta[0] == talia.figura[i][0])
         {
-            printf("sprawdzam..."); system("sleep 2");
             suma_pkt += talia.wartosci[i];
+            break;
         }
     }
     talia.usun_karte();

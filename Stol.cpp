@@ -38,6 +38,7 @@ void Stol::jacy_gracze()
 
 void Stol::tura(Gracz& gracz, Talia& talia)
 {
+    char fool;
     int aktywni_gracze = liczba_graczy;
     int aktywni_tura = 0;
 ///!-------------------------------------------------------
@@ -45,6 +46,7 @@ void Stol::tura(Gracz& gracz, Talia& talia)
 
     while(true)
     {
+        talia.tasuj_talie();
         aktywni_tura = aktywni_gracze;
         for(int i=0; i<liczba_graczy; i++)
         {
@@ -76,6 +78,7 @@ void Stol::tura(Gracz& gracz, Talia& talia)
                 cout << "[1] - Biore karte z talii" << endl;
                 cout << "[2] - Pasuje w tej rundzie" << endl;
                 cout << "[3] - Tasuj talie" << endl;
+                cout << "[4] - Podejrzyj talie" << endl;
                 cout << "CO ROBISZ: ";
                 cin >> wybor;
             }
@@ -85,7 +88,6 @@ void Stol::tura(Gracz& gracz, Talia& talia)
             case 1:
                 gracze[i].pobierz_karte(talia);
                 gracze[i].dodaj_sume(talia);
-                system("sleep 3");
                 system("clear");
                 break;
             case 2:
@@ -94,17 +96,69 @@ void Stol::tura(Gracz& gracz, Talia& talia)
                 break;
             case 3:
                 talia.tasuj_talie();
+                i--;
+                system("clear");
+                break;
+            case 4:
+                talia.print_talia();
+                cout << "Aby grac dalej nacisnij dowolny klawisz" << endl;
+                cin >> fool;
+                i--;
                 system("clear");
                 break;
             }
         }
-        if(aktywni_tura<1){break;}
+        if(aktywni_tura<1)
+        {
+            break;
+        }
     }
 }
 
 int Stol::get_liczba_graczy()
 {
     return liczba_graczy;
+}
+
+void Stol::ranking(Gracz& gracz)
+{
+    char fool;
+    system("clear");
+    cout << "GRATULACJE! GRA SKONCZONA!" << endl;
+    cout << "--------------------------------------------" << endl;
+    cout << "Gracze, ktorzy uzyskali oczko:" << endl;
+    for(int i=0; i<=liczba_graczy; i++)
+    {
+        if(gracze[i].suma_pkt==21)
+        {
+            cout << gracze[i].imie << ": " << gracze[i].suma_pkt << endl;
+        }
+    }
+    cout << "--------------------------------------------" << endl;
+    cout << "Pozostali gracze, ktorzy nie odpadli: " << endl;
+    for(int licznik=21; licznik>=0; licznik--)
+    {
+        for(int i=0; i<=liczba_graczy; i++)
+        {
+
+            if(gracze[i].suma_pkt>0 && gracze[i].suma_pkt==licznik)
+            {
+                cout << "[" << i+1 << "]" << gracze[i].imie << ": " << gracze[i].suma_pkt << endl;
+            }
+        }
+    }
+    cout << "--------------------------------------------" << endl;
+    cout << "Debile, ktorzy odpadli: " << endl;
+    for(int i=0; i<=liczba_graczy; i++)
+    {
+        if(gracze[i].suma_pkt>21)
+        {
+            cout << gracze[i].imie << ": " << gracze[i].suma_pkt << endl;
+        }
+    }
+    cout << "--------------------------------------------" << endl;
+    cout << "Nacisnij dowolny klawisz, aby wyjsc" << endl;
+    cin >> fool;
 }
 
 Stol::~Stol()
