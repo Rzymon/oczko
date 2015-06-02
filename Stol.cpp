@@ -39,7 +39,6 @@ void Stol::jacy_gracze()
 void Stol::tura(Gracz& gracz, Talia& talia)
 {
     char fool;
-    int aktywni_gracze = liczba_graczy;
     int aktywni_tura = 0;
 ///!-------------------------------------------------------
     int wybor=0;
@@ -47,7 +46,7 @@ void Stol::tura(Gracz& gracz, Talia& talia)
     while(true)
     {
         talia.tasuj_talie();
-        aktywni_tura = aktywni_gracze;
+        aktywni_tura = liczba_graczy;
         for(int i=0; i<liczba_graczy; i++)
         {
             system("clear");
@@ -62,7 +61,7 @@ void Stol::tura(Gracz& gracz, Talia& talia)
 
             cout << "|||||||||| GRACZ [" << i+1 << "]:  " << gracze[i].imie << "  ||||||||||" << endl;
             cout << "--------------------------------------------" << endl;
-            if(gracze[i].karty>0)
+            if(gracze[i].karty>0 && gracze[i].suma_pkt>0 && gracze[i].suma_pkt<21)
             {
                 cout << gracze[i].reka_karty;
             }
@@ -70,6 +69,7 @@ void Stol::tura(Gracz& gracz, Talia& talia)
             {
                 aktywni_tura--;
                 wybor=2;
+                system("clear");
             }
             else
             {
@@ -108,10 +108,7 @@ void Stol::tura(Gracz& gracz, Talia& talia)
                 break;
             }
         }
-        if(aktywni_tura<1)
-        {
-            break;
-        }
+        if(aktywni_tura<1)  break;
     }
 }
 
