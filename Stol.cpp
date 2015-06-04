@@ -128,7 +128,7 @@ void Stol::ranking(Gracz& gracz)
     {
         if(gracze[i].suma_pkt==21)
         {
-            cout << gracze[i].imie << ": " << gracze[i].suma_pkt << endl;
+            cout << "[" << i+1 << "]" <<  gracze[i].imie << ": " << gracze[i].suma_pkt << endl;
         }
     }
     cout << "--------------------------------------------" << endl;
@@ -150,7 +150,7 @@ void Stol::ranking(Gracz& gracz)
     {
         if(gracze[i].suma_pkt>21)
         {
-            cout << gracze[i].imie << ": " << gracze[i].suma_pkt << endl;
+            cout << "[" << i+1 << "]" <<  gracze[i].imie << ": " << gracze[i].suma_pkt << endl;
         }
     }
     cout << "--------------------------------------------" << endl;
