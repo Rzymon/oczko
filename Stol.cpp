@@ -133,7 +133,7 @@ void Stol::ranking(Gracz& gracz)
     }
     cout << "--------------------------------------------" << endl;
     cout << "Pozostali gracze, ktorzy nie odpadli: " << endl;
-    for(int licznik=21; licznik>=0; licznik--)
+    for(int licznik=20; licznik>=0; licznik--)
     {
         for(int i=0; i<=liczba_graczy; i++)
         {
